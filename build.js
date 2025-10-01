@@ -5,8 +5,10 @@ const path = require('path');
 // Load environment variables from .env file
 require('dotenv').config();
 
-
 // Konfiguracja Contentful - używaj zmiennych środowiskowych
+console.log('Space ID:', process.env.CONTENTFUL_SPACE_ID);
+console.log('Access Token:', process.env.CONTENTFUL_ACCESS_TOKEN ? 'SET' : 'NOT SET');
+
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
@@ -34,14 +36,28 @@ async function buildSite() {
   try {
     console.log('🚀 Rozpoczynam build strony barbershop...');
     
-    // Pobierz dane z Contentful dla typu 'barbershop'
-    const barbershopData = await client.getEntries({ content_type: 'barbershop' });
+    // Pobierz dane z Contentful dla 3 typów content
+    const [barbershopData, barbershop2Data, barbershop3Data] = await Promise.all([
+      client.getEntries({ content_type: 'barbershop' }),
+      client.getEntries({ content_type: 'barbershop2' }),
+      client.getEntries({ content_type: 'barbershop3' })
+    ]);
     
     if (barbershopData.items.length === 0) {
       throw new Error('Nie znaleziono danych typu "barbershop" w Contentful');
     }
+    if (barbershop2Data.items.length === 0) {
+      throw new Error('Nie znaleziono danych typu "barbershop2" w Contentful');
+    }
+    if (barbershop3Data.items.length === 0) {
+      throw new Error('Nie znaleziono danych typu "barbershop3" w Contentful');
+    }
     
-    const data = barbershopData.items[0].fields;
+    const data = { 
+      ...barbershopData.items[0].fields, 
+      ...barbershop2Data.items[0].fields, 
+      ...barbershop3Data.items[0].fields 
+    };
     console.log('📋 Pobrano dane z Contentful');
     
     // Funkcja do obsługi obrazków z Contentful

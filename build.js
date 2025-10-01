@@ -2,11 +2,14 @@ const contentful = require('contentful');
 const fs = require('fs');
 const path = require('path');
 
+// Load environment variables from .env file
+require('dotenv').config();
 
-// Konfiguracja Contentful
+
+// Konfiguracja Contentful - używaj zmiennych środowiskowych
 const client = contentful.createClient({
-  space: '6u4vu1gsxdgc',
-  accessToken: 'guB28IPV06x0jqKeiVTSTuawrCdRALWdyokOwuarhdM'
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 });
 
 // Funkcja do kopiowania folderów rekurencyjnie

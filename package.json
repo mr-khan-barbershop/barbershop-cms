@@ -1,0 +1,12 @@
+{
+  "name": "barbershop-cms-site",
+  "version": "1.0.0",
+  "description": "Strona barbershop z CMS Contentful",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "contentful": "^10.0.0"
+  }
+}

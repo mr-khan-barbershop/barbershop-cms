@@ -36,21 +36,21 @@ async function buildSite() {
   try {
     console.log('🚀 Rozpoczynam build strony barbershop...');
     
-    // Pobierz dane z Contentful dla 3 typów content
-    const [barbershopData, barbershop2Data, barbershop3Data] = await Promise.all([
-      client.getEntries({ content_type: 'barbershop' }),
-      client.getEntries({ content_type: 'barbershop2' }),
-      client.getEntries({ content_type: 'barbershop3' })
-    ]);
+  // Pobierz dane z Contentful dla 3 typów content
+  const [barbershopData, barbershop2Data, barbershop3Data] = await Promise.all([
+    client.getEntries({ content_type: 'barbershop_new1' }),
+    client.getEntries({ content_type: 'barbershop_new2' }),
+    client.getEntries({ content_type: 'barbershop_new3' })
+  ]);
     
     if (barbershopData.items.length === 0) {
-      throw new Error('Nie znaleziono danych typu "barbershop" w Contentful');
+      throw new Error('Nie znaleziono danych typu "barbershop_new1" w Contentful');
     }
     if (barbershop2Data.items.length === 0) {
-      throw new Error('Nie znaleziono danych typu "barbershop2" w Contentful');
+      throw new Error('Nie znaleziono danych typu "barbershop_new2" w Contentful');
     }
     if (barbershop3Data.items.length === 0) {
-      throw new Error('Nie znaleziono danych typu "barbershop3" w Contentful');
+      throw new Error('Nie znaleziono danych typu "barbershop_new3" w Contentful');
     }
     
     const data = { 

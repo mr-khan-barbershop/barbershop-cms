@@ -254,6 +254,7 @@ section{padding: 7.5rem 0;}
 
 header a.logo img {
     max-width: 170px;
+    max-height: 100px;
     vertical-align: sub;
 }
 
@@ -262,7 +263,7 @@ header a.logo img {
     top: 0;
     z-index: 99;
     overflow: hidden;
-    height: 90px;
+    height: 100px;
     width: 100%;
     -webkit-transition: none;
     -o-transition: none;
@@ -1157,7 +1158,7 @@ header a.logo img {
 }
 
 .bg-img2{
-    background-image: url("../img/old-man.jpg");
+    background-image: url("../img/produkty.jpeg");
     background-size: cover;
 }
 

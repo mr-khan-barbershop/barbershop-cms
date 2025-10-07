@@ -901,7 +901,43 @@ header a.logo img {
     padding-bottom: 0;
 }
 
+.cube-portfolio1{
+    background: transparent;
+    border: none;
+    margin: 10px 4px 6px 4px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+    display: inline-block;
+    font-family:'Poppins', sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
+.cube-portfolio1{
+    margin: 0;
+}
+
+.cube-portfolio1 {
+    color: #c29e75;
+}
+
+.cube-portfolio1 {
+    color : #c29e75;
+}
+
+.cube-portfolio1 {
+    background: rgba(194, 158, 117, 0.45);
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.cube-portfolio1 {
+    opacity: 1;
+}
 
 
 /* ===================================

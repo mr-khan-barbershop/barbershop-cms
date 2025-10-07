@@ -61,7 +61,7 @@ async function buildSite() {
       ...barbershopData.items[0].fields, 
       ...barbershop2Data.items[0].fields, 
       ...barbershop3Data.items[0].fields,
-      ...barbershop21Data.image[0].fields
+      ...barbershop21Data.items[0].fields
     };
     console.log('📋 Pobrano dane z Contentful');
     

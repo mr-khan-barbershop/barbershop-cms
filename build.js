@@ -36,11 +36,12 @@ async function buildSite() {
   try {
     console.log('🚀 Rozpoczynam build strony barbershop...');
     
-  // Pobierz dane z Contentful dla 3 typów content
-  const [barbershopData, barbershop2Data, barbershop3Data] = await Promise.all([
+  // Pobierz dane z Contentful dla 4 typów content
+  const [barbershopData, barbershop2Data, barbershop3Data, barbershop21Data] = await Promise.all([
     client.getEntries({ content_type: 'barbershop_new1' }),
     client.getEntries({ content_type: 'barbershop_new2' }),
-    client.getEntries({ content_type: 'barbershop_new3' })
+    client.getEntries({ content_type: 'barbershop_new3' }),
+    client.getEntries({ content_type: 'barbershop21' })
   ]);
     
     if (barbershopData.items.length === 0) {
@@ -52,11 +53,15 @@ async function buildSite() {
     if (barbershop3Data.items.length === 0) {
       throw new Error('Nie znaleziono danych typu "barbershop_new3" w Contentful');
     }
+    if (barbershop21Data.items.length === 0) {
+      throw new Error('Nie znaleziono danych typu "barbershop21" w Contentful');
+    }
     
     const data = { 
       ...barbershopData.items[0].fields, 
       ...barbershop2Data.items[0].fields, 
-      ...barbershop3Data.items[0].fields 
+      ...barbershop3Data.items[0].fields,
+      ...barbershop21Data.image[0].fields
     };
     console.log('📋 Pobrano dane z Contentful');
     
@@ -143,6 +148,39 @@ async function buildSite() {
     html = html.replace(/\{\{CMS:barbershop\.service10name\}\}/g, data.service10name || '');
     html = html.replace(/\{\{CMS:barbershop\.service10description\}\}/g, data.service10description || '');
     html = html.replace(/\{\{CMS:barbershop\.service10price\}\}/g, data.service10price || '');
+
+
+    html = html.replace(/\{\{CMS:barbershop\.service11name\}\}/g, data.service11name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service11description\}\}/g, data.service11description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service11price\}\}/g, data.service11price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service12name\}\}/g, data.service12name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service12description\}\}/g, data.service12description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service12price\}\}/g, data.service12price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service13name\}\}/g, data.service13name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service13description\}\}/g, data.service13description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service13price\}\}/g, data.service13price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service14name\}\}/g, data.service14name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service14description\}\}/g, data.service14description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service14price\}\}/g, data.service14price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service15name\}\}/g, data.service15name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service15description\}\}/g, data.service15description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service15price\}\}/g, data.service15price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service16name\}\}/g, data.service16name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service16description\}\}/g, data.service16description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service16price\}\}/g, data.service16price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service17name\}\}/g, data.service17name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service17description\}\}/g, data.service17description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service17price\}\}/g, data.service17price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service18name\}\}/g, data.service18name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service18description\}\}/g, data.service18description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service18price\}\}/g, data.service18price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service19name\}\}/g, data.service19name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service19description\}\}/g, data.service19description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service19price\}\}/g, data.service19price || '');
+    html = html.replace(/\{\{CMS:barbershop\.service20name\}\}/g, data.service20name || '');
+    html = html.replace(/\{\{CMS:barbershop\.service20description\}\}/g, data.service20description || '');
+    html = html.replace(/\{\{CMS:barbershop\.service20price\}\}/g, data.service20price || '');
+
     
     // Team members
     html = html.replace(/\{\{CMS:barbershop\.teammember1name\}\}/g, data.teammember1name || '');

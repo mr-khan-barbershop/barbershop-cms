@@ -12,36 +12,19 @@
     <meta name="keywords" content="barber, strzyżenie, golenie, stylizacja włosów, salon barberski, broda, wąsy, fryzura męska, profesjonalny barber">
     <!-- Page Title -->
     <title>MR KHAN | BARBERSHOP BEMOWO </title>
-    
-    <!-- Resource Hints for Performance -->
-    <link rel="preconnect" href="https://images.ctfassets.net" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Preload LCP Image (Hero) -->
-    <link rel="preload" as="image" href="{{CMS:barbershop.heroimage}}" fetchpriority="high">
-    
     <!-- Favicon -->
     <link href="barber/img/favicon.ico" rel="icon">
-    <!-- Critical CSS - Bundle contains Bootstrap and base styles -->
+    <!-- Bundle -->
     <link href="vendor/css/bundle.min.css" rel="stylesheet">
-    <!-- Critical navigation and main styles -->
+    <!-- Plugin Css -->
+    <link href="vendor/css/LineIcons.min.css" rel="stylesheet">
+    <link href="vendor/css/revolution-settings.min.css" rel="stylesheet">
+    <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet">
+    <!-- Style Sheet -->
     <link href="barber/css/navigation.css" rel="stylesheet">
     <link href="barber/css/style.css" rel="stylesheet">
-    
-    <!-- Non-critical CSS loaded with low priority -->
-    <link href="vendor/css/LineIcons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="vendor/css/revolution-settings.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="vendor/css/owl.carousel.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="vendor/css/LineIcons.min.css" rel="stylesheet">
-        <link href="vendor/css/revolution-settings.min.css" rel="stylesheet">
-        <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
-        <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
-        <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet">
-    </noscript>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -149,7 +132,7 @@
                     <!-- SLIDE  -->
                     <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="assets/100x50_44515-slider-bg-3.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide 3" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="{{CMS:barbershop.heroimage}}" fetchpriority="high" data-kenburns="on" data-duration="15000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10"  data-bgfit="cover" data-bgrepeat="no-repeat" data-bgposition="center center" class="rev-slidebg" alt="{{CMS:barbershop.herotitle}}" data-no-retina>
+                        <img src="{{CMS:barbershop.heroimage}}" data-kenburns="on" data-duration="15000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10"  data-bgfit="cover" data-bgrepeat="no-repeat" data-bgposition="center center" class="rev-slidebg" alt="{{CMS:barbershop.herotitle}}" data-no-retina>
                         <div class="slider-overlay"></div>
                         <!-- LAYERS -->
 
@@ -555,7 +538,7 @@
             <div class="col-lg-6">
                 <!--About Image-->
                 <div class="about-image js-tilt">
-                    <img src="{{CMS:barbershop.aboutimage}}" alt="{{CMS:barbershop.abouttitle}}" loading="lazy" width="540" height="540">
+                    <img src="{{CMS:barbershop.aboutimage}}" alt="{{CMS:barbershop.abouttitle}}">
                 </div>
             </div>
 
@@ -831,84 +814,84 @@
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage1}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage1}}" alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage1}}" alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage2}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage2}}"  alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage2}}"  alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage3}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage3}}"  alt="image" width="760" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage3}}"  alt="image" width="760" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage4}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage4}}"  alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage4}}"  alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage10}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage10}}"  alt="image" width="760" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage10}}"  alt="image" width="760" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage5}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage5}}" alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage5}}" alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage6}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage6}}"  alt="image" width="760" height="720" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage6}}"  alt="image" width="760" height="720">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage11}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage11}}" alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage11}}" alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage12}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage12}}"  alt="gallery image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage12}}"  alt="" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage9}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage9}}" alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage9}}" alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage8}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage8}}"  alt="image" width="380" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage8}}"  alt="image" width="380" height="360">
                     </div>
                 </a>
             </div>
             <div class="cbp-item">
                 <a href="{{CMS:barbershop.galleryimage7}}" class="cbp-caption cbp-lightbox" data-title="Zobacz niesamowite efekty">
                     <div class="cbp-caption-defaultWrap">
-                        <img src="{{CMS:barbershop.galleryimage7}}" alt="image" width="760" height="360" loading="lazy">
+                        <img src="{{CMS:barbershop.galleryimage7}}" alt="image" width="760" height="360">
                     </div>
                 </a>
             </div>
@@ -968,7 +951,7 @@
         <div class="row mt-lg-5 pt-lg-5">
             <div class="col-lg-4 col-md-6">
                <div class="team-item">
-                   <img src="{{CMS:barbershop.teammember1image}}" alt="{{CMS:barbershop.teammember1name}}" loading="lazy" width="350" height="350">
+                   <img src="{{CMS:barbershop.teammember1image}}" alt="{{CMS:barbershop.teammember1name}}">
                    <div class="team-detail">
                        <h5 class="m-0">{{CMS:barbershop.teammember1name}}</h5>
                        <p class="mb-2">{{CMS:barbershop.teammember1role}}</p>
@@ -981,7 +964,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
-                    <img src="{{CMS:barbershop.teammember2image}}" alt="{{CMS:barbershop.teammember2name}}" loading="lazy" width="350" height="350">
+                    <img src="{{CMS:barbershop.teammember2image}}" alt="{{CMS:barbershop.teammember2name}}">
                     <div class="team-detail">
                         <h5 class="m-0">{{CMS:barbershop.teammember2name}}</h5>
                         <p class="mb-2">{{CMS:barbershop.teammember2role}}</p>
@@ -994,7 +977,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="team-item">
-                    <img src="{{CMS:barbershop.teammember3image}}" alt="{{CMS:barbershop.teammember3name}}" loading="lazy" width="350" height="350">
+                    <img src="{{CMS:barbershop.teammember3image}}" alt="{{CMS:barbershop.teammember3name}}">
                     <div class="team-detail">
                         <h5 class="m-0">{{CMS:barbershop.teammember3name}}</h5>
                         <p class="mb-2">{{CMS:barbershop.teammember3role}}</p>
@@ -1021,7 +1004,7 @@
                         <p class="testimonial-para"> Najlepszy salon Barberski w mieście! Profesjonalne podejście, wspaniała atmosfera i doskonałe rezultaty. Polecam każdemu, kto szuka jakości i stylu. </p>
 
                         <div class="testimonial-post">
-                            <a href="javascript:void(0)" class="post"><img src="barber/img/testimonial.png" alt="image" loading="lazy" width="80" height="80"></a>
+                            <a href="javascript:void(0)" class="post"><img src="barber/img/testimonial.png" alt="image"></a>
                             <div class="text-content">
                                 <h5>Jan Kowalski</h5>
                                 <p class="mb-0">Klient</p>
@@ -1039,7 +1022,7 @@
                         <p class="testimonial-para"> Fantastyczne miejsce! Barberzy to prawdziwi artyści. Moja broda nigdy nie wyglądała lepiej. Atmosfera jest relaksująca, a obsługa na najwyższym poziomie. </p>
 
                         <div class="testimonial-post">
-                            <a href="javascript:void(0)" class="post"><img src="barber/img/testimonial.png" alt="image" loading="lazy" width="80" height="80"></a>
+                            <a href="javascript:void(0)" class="post"><img src="barber/img/testimonial.png" alt="image"></a>
                             <div class="text-content">
                                 <h5>Piotr Nowak</h5>
                                 <p class="m-0">Klient </p>
@@ -1057,7 +1040,7 @@
                         <p class="color-black testimonial-para mb-15px"> Regularnie odwiedzam ten salon od kilku lat. Zawsze wychodzę zadowolony. Zespół to profesjonaliści, którzy znają się na swojej pracy. Polecam wszystkim! </p>
 
                         <div class="testimonial-post">
-                            <a href="javascript:void(0)" class="post"><img src="barber/img/testimonial.png" alt="image" loading="lazy" width="80" height="80"></a>
+                            <a href="javascript:void(0)" class="post"><img src="barber/img/testimonial.png" alt="image"></a>
                             <div class="text-content">
                                 <h5>Marek Wiśniewski</h5>
                                 <p class="m-0">Klient</p>
@@ -1173,31 +1156,33 @@
 <!-- JavaScript -->
 <script src="vendor/js/bundle.min.js"></script>
 <!-- Plugin Js -->
-<script src="vendor/js/jquery.appear.js" defer></script>
-<script src="vendor/js/jquery.fancybox.min.js" defer></script>
-<script src="vendor/js/owl.carousel.min.js" defer></script>
-<script src="vendor/js/parallaxie.min.js" defer></script>
-<script src="vendor/js/wow.min.js" defer></script>
-<script src="vendor/js/jquery.cubeportfolio.min.js" defer></script>
+<script src="vendor/js/jquery.appear.js"></script>
+<script src="vendor/js/jquery.fancybox.min.js"></script>
+<script src="vendor/js/owl.carousel.min.js"></script>
+<script src="vendor/js/parallaxie.min.js"></script>
+<script src="vendor/js/wow.min.js"></script>
+<script src="vendor/js/jquery.cubeportfolio.min.js"></script>
 <!-- REVOLUTION JS FILES -->
-<script src="vendor/js/jquery.themepunch.tools.min.js" defer></script>
-<script src="vendor/js/jquery.themepunch.revolution.min.js" defer></script>
+<script src="vendor/js/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
 <!-- SLIDER REVOLUTION EXTENSIONS -->
-<script src="vendor/js/extensions/revolution.extension.actions.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.carousel.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.kenburn.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.layeranimation.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.migration.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.navigation.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.parallax.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.slideanims.min.js" defer></script>
-<script src="vendor/js/extensions/revolution.extension.video.min.js" defer></script>
-<!-- Google Maps not used on this page - removed for performance -->
+<script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
+<!-- google map-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJRG4KqGVNvAPY4UcVDLcLNXMXk2ktNfY"></script>
+<script src="barber/js/map.js"></script>
 <!--Tilt Js-->
-<script src="barber/js/tilt.jquery.min.js" defer></script>
-<script src="vendor/js/contact_us.js" defer></script>
+<script src="barber/js/tilt.jquery.min.js"></script>
+<script src="vendor/js/contact_us.js"></script>
 <!-- custom script-->
-<script src="barber/js/script.js" defer></script>
+<script src="barber/js/script.js"></script>
 
 </body>
 </html>

@@ -65,19 +65,12 @@ async function buildSite() {
     };
     console.log('📋 Pobrano dane z Contentful');
     
-    // Funkcja do obsługi obrazków z Contentful - tylko WebP bez zmiany rozdzielczości
-    function getImageUrl(imageField, quality = 95) {
+    // Funkcja do obsługi obrazków z Contentful
+    function getImageUrl(imageField) {
       if (!imageField) return '';
       if (typeof imageField === 'string') return imageField; // Jeśli to już URL
       if (imageField.fields && imageField.fields.file) {
-        let url = 'https:' + imageField.fields.file.url;
-        // Dodaj tylko konwersję do WebP (bez zmiany rozdzielczości)
-        const params = [];
-        params.push(`q=${quality}`); // Wysoka jakość (95%)
-        params.push('fm=webp'); // Format WebP dla lepszej kompresji
-        params.push('fl=progressive'); // Progressive loading
-        url += '?' + params.join('&');
-        return url;
+        return 'https:' + imageField.fields.file.url;
       }
       return '';
     }

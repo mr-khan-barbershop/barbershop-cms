@@ -1,46 +1,4 @@
-/* ===================================
-    About
-====================================== */
 
-/*
-    Theme Name: MegaOne
-    Theme URI:
-    Author: Themes Industry
-    Author URI:
-    Description: One Page Parallax Template
-    Tags: one page, multipurpose, parallax, creative, html5
-
- */
-
-/* ===================================
-    Table of Content
-====================================== */
-
-
-/*  - Fonts
-    - General
-    - Fonts
-    - Social Icon Hover
-    - Header And Navigation
-    - Slider
-    - About
-    - Team
-    - Portfolio
-    - Price
-    - Parallax
-    - Testimonial
-    - Client
-    - Blog
-    - Contact
-    - Map
-    - Footer
-    - Loader
-    - Media Queries   */
-
-
-/* ===================================
-    Google font
-====================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap');
@@ -321,7 +279,7 @@ header a.logo img {
     padding: 0.4rem 1.5rem;
 }
 
-.navbar-top-default #megaone{
+.navbar-top-default #navbarSupportedContent{
     margin-right: -30px;
 }
 
@@ -1152,11 +1110,11 @@ header a.logo img {
 ====================================== */
 
 .bg-img1{
-    background-image: url("../img/scissor-img-1.jpg");
+    background-image: url("../img/tlo1.jpg");
 }
 
 .bg-img2{
-    background-image: url("../img/produkty.jpeg");
+    background-image: url("../img/produkty.jpg");
     background-size: cover;
 }
 
